@@ -121,7 +121,7 @@ for dns in config['ips']:
         downloads_dir = '{}/downloads'.format(temp_dir)
         sub_env = os.environ.copy()
 
-        wget_base_command = ['wget', '--quiet', '--no-dns-cache', '-P', downloads_dir]
+        wget_base_command = ['wget', '--no-dns-cache', '-P', downloads_dir]
 
         if protocol == 'https':
             logger.info('Using https mode')
